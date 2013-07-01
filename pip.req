@@ -1,0 +1,12 @@
+Django==1.4.5
+django-reversion==1.6.6
+PIL
+South==0.7.6
+django-cms==2.4.2
+#django-cms==2.3.6
+django-tinymce==1.5.1b4
+django-filer==0.9.3
+easy-thumbnails==1.2
+cmsplugin-filer==0.9.5
+-e git+https://github.com/noirbizarre/django.js.git@4738b194b273f162032ac57131360c9e0aa65f58#egg=django.js-dev
+-e git+https://github.com/django-debug-toolbar/django-debug-toolbar.git@6f79f0b0ada69e1d95d97066ba78e0d18aeab3ba#egg=django_debug_toolbar-dev

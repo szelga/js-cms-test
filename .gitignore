@@ -1,0 +1,9 @@
+*.orig
+*.rej
+*.swp
+*.pyc
+*.pyo
+project.db
+media/
+static/
+env/

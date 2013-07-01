@@ -1,0 +1,46 @@
+{% load cms_tags staticfiles menu_tags sekizai_tags i18n js %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+  <head>
+
+    <title>{% block title %}App test -- standalone{% endblock %}</title>
+
+    {% render_block "css" %}
+
+    {% addtoblock "js" %}
+
+    {% django_js %}
+
+    {% endaddtoblock %}
+
+  </head>
+
+  <body>
+
+    <div id="menu">
+      {% show_menu %}
+    </div>
+
+    <div id="content">
+    {% block content %}
+      App test -- standalone
+    {% endblock %}
+    </div>
+
+{% addtoblock "js" %}
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    alert(Django.url('myapp-view2'));
+  });
+</script>
+
+{% endaddtoblock %}
+
+  </body>
+
+  {% render_block "js" %}
+
+</html>

@@ -1,0 +1,4 @@
+* Requirements are in pip.req file.
+*   DB should be initialized with
+        python manage.py syncdb --all
+    command (because of django-cms).
